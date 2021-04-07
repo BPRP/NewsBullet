@@ -1,0 +1,15 @@
+header {
+	background-color: #0B0B0B;
+	width: 100%;
+	margin: 0;
+	height: 7vh;
+	line-height: 7vh;
+	white-space: nowrap;
+}
+
+header > h1 {
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	font-size: 2vh;
+}

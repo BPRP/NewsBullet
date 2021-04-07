@@ -1,0 +1,178 @@
+main {
+    height: 93vh;
+}
+
+main > ul {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;    
+}
+
+main > ul > li {
+    height: inherit;
+    width: 33vw;
+}
+
+main > ul > li:first-of-type {
+    border-right: 1px solid white;
+}
+
+main > ul > li:last-of-type {
+    border-left: 1px solid white;
+}
+
+main > ul > li > section {
+    padding: 0 3vw;
+    height: inherit;
+    overflow-y: scroll;
+    color: white;
+}
+
+.section-title {
+	font-size: 2em;
+	margin: 2vh auto;
+	max-width: 80%;
+	text-align: center;
+	font-weight: 700;
+}
+
+.create-card,
+.card {
+    display: grid;
+    list-style: none;
+    padding: 0;
+    margin: 2vh 0;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.card > li {
+    overflow: hidden;
+}
+
+.card > li > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.create-card > li {
+    width: -moz-available;
+}
+
+.create-card > li > input,
+.create-card > li > select,
+.card > li > p {
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+    background: none;
+    padding: 5px;
+    width: -moz-available;
+    border: none;
+}
+
+.create-card > li > input[type="submit"],
+.card > li > button {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 6px 10px 7px;
+    font-weight: 500;
+    font-size: 1.5em;
+    width: -moz-available;
+    border: none;
+}
+
+.one {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.two {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.three {
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.four {
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.five {
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.six {
+    border: 1px solid white;
+}
+
+.one,
+.two {
+    grid-row: 1;
+}
+
+.one,
+.four {
+    grid-column: 1 / 4;
+}
+
+.two,
+.five {
+    grid-column: 4 / 7;
+}
+
+.three {
+    grid-row: 2;
+}
+
+.three,
+.six {
+    grid-column: 1 / 7;
+}
+
+.four,
+.five {
+    grid-row: 3;
+}
+
+.six {
+    grid-row: 4;
+}
+
+.button-one,
+.button-two,
+.button-three {
+    grid-row: 5;
+    padding: 0 !important;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.edit-btn,
+.button-one {
+    border-right: 1px solid black;
+}
+
+.button-one {
+    grid-column: 1 / 3;
+}
+
+.button-two {
+    grid-column: 3 / 5;
+}
+
+.button-three {
+    border-left: 1px solid black;
+    grid-column: 5 / 7;
+}
